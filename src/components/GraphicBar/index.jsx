@@ -9,7 +9,6 @@ import {
   Legend,
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
-import { GraphicDefault } from '../GraphicDefault';
 
 ChartJS.register(
   CategoryScale,
@@ -61,8 +60,6 @@ export const data = {
 
 export function GraphicBar() {
   return (
-    <GraphicDefault>
       <Bar options={options} data={data} />
-    </GraphicDefault> 
   ) 
 }

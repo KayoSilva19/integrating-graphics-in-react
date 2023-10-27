@@ -7,8 +7,12 @@ function App() {
 
   return (
    <Conatiner>
-    <GraphicLine/>
-    <GraphicBar/>
+    <div className="flex flex-col h-full justify-center items-center flex-1">
+      <div className=" flex flex-col gap-1 sm:w-[300px] md:w-[568px]">
+      <GraphicLine/>
+      <GraphicBar/>
+      </div>
+    </div>
    </Conatiner>
   )
 }

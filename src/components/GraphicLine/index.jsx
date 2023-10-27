@@ -9,7 +9,6 @@ import {
   Legend,
 } from "chart.js";
 import { Line } from "react-chartjs-2";
-import { GraphicDefault } from "../GraphicDefault";
 
 ChartJS.register(
   CategoryScale,
@@ -64,8 +63,6 @@ export const data = {
 
 export const GraphicLine = () => {
   return (
-    <GraphicDefault>
       <Line options={options} data={data} />
-    </GraphicDefault> 
   )
 };
